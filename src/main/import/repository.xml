@@ -12,12 +12,13 @@
                   j:staticMountPointProviderKey="module-essaimodule-1.0-SNAPSHOT">
                     <src jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
                         <main jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
-                            <resources jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:folder">
-                                <jnt_listeContacts2 jcr:mixinTypes="jmix:sourceControl"
-                                         jcr:primaryType="jnt:nodeTypeFolder">
-                                    <html jcr:mixinTypes="jmix:sourceControl"
-                              jcr:primaryType="jnt:templateTypeFolder">
-                                        <listeContacts2.jsp jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:viewFile"/>
+                            <css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFolder">
+                                <essai.css jcr:mixinTypes="jmix:sourceControl" jcr:primaryType="jnt:cssFile"/>
+                            </css>
+                            <resources jcr:primaryType="jnt:folder">
+                                <jnt_listeContacts2 jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:primaryType="jnt:templateTypeFolder">
+                                        <listeContacts2.jsp jcr:primaryType="jnt:viewFile"/>
                                     </html>
                                 </jnt_listeContacts2>
                                 <META-INF jcr:primaryType="jnt:metaInfFolder">
