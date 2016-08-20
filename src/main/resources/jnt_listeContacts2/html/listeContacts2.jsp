@@ -21,7 +21,15 @@
 <%@ taglib prefix="template" uri="http://www.jahia.org/tags/templateLib" %>
 <template:addResources type="css" resources="bootstrapComponents.css"/>
 <template:addResources type="css" resources="essai.css"/>
+<head>
+<style>
+  .tableau:hover {
+    background-color: yellow;
+    }
 
+
+</style>
+</head>
 <H1> Liste contacts </H1>
 
 <jcr:sql var="result" sql="SELECT * FROM [jnt:contact]"/>
@@ -37,14 +45,15 @@ nodes size : ${result.nodes.size}
      <th>Nom</th>
      <th>Prénom</th>
       <th>Adresse</th>
-     <th>URL</th>
-   </tr>  
+     <th>URL node</th>
+   </tr> 
+   
    <c:forEach items="${result.nodes}" var="userMessage">
       <jcr:nodeProperty node="${userMessage}" name="lastname" var="nom"/>
       <jcr:nodeProperty node="${userMessage}" name="firstname" var="prenom"/>
       <jcr:nodeProperty node="${userMessage}" name="address" var="adresse"/>
-      <tr>
-        <td >
+      <tr class="tableau">
+        <td>
            ${nom.string}
         </td>
         <td>
@@ -57,5 +66,6 @@ nodes size : ${result.nodes.size}
           ${userMessage.url}
         </td>  
       </tr>  
-    </c:forEach>             
+    </c:forEach>    
+          
 </table> 
