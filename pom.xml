@@ -59,8 +59,8 @@
   <name>essaiModule</name>
   <description>This is the custom module (essaiModule) for running on a Digital Experience Manager server.</description>
   <scm>
-    <connection>scm:dummy:uri</connection>
-    <developerConnection>scm:dummy:uri</developerConnection>
+    <connection>scm:git:https://github.com/bbanitz/jahia-essaiModule.git</connection>
+    <developerConnection>scm:git:https://github.com/bbanitz/jahia-essaiModule.git</developerConnection>
   </scm>
   <properties>
     <jahia-depends>default,contact</jahia-depends>

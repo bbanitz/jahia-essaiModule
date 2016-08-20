@@ -20,7 +20,7 @@
 
 <%@ taglib prefix="template" uri="http://www.jahia.org/tags/templateLib" %>
 <template:addResources type="css" resources="bootstrapComponents.css"/>
-
+<template:addResources type="css" resources="essai.css"/>
 
 <H1> Liste contacts </H1>
 
@@ -37,6 +37,7 @@ nodes size : ${result.nodes.size}
      <th>Nom</th>
      <th>Prénom</th>
       <th>Adresse</th>
+     <th>URL</th>
    </tr>  
    <c:forEach items="${result.nodes}" var="userMessage">
       <jcr:nodeProperty node="${userMessage}" name="lastname" var="nom"/>
@@ -51,6 +52,9 @@ nodes size : ${result.nodes.size}
         </td>  
         <td>
           ${adresse.string}
+        </td>  
+        <td>
+          ${userMessage.url}
         </td>  
       </tr>  
     </c:forEach>             
